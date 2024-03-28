@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './template/header/header.component';
 import { HomeComponent } from './template/home/home.component';
 import { FooterComponent } from './template/footer/footer.component';
+import { ListarProdutosComponent } from './components/produtos/listar-produtos/listar-produtos.component';
+import { CadastrarProdutosComponent } from './components/produtos/cadastrar-produtos/cadastrar-produtos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    ListarProdutosComponent,
+    CadastrarProdutosComponent
   ],
   imports: [
     BrowserModule,
