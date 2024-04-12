@@ -11,6 +11,7 @@ export class HomeComponent {
     idProduto: number = 123;
     precoProduto : number = 2.59;
     promocao: boolean = true;
+    foto: string = 'assets/img/crud.png'
 
   constructor() {
       // variáveis de string com concatenação

@@ -1,4 +1,17 @@
 <h1> Seja bem vindo ao Curso de Angular</h1>
+<h4 class="text-danger"> {{anuncio}}</h4>
+
+<div class="card" style="width: 18rem;">
+  <img [src]="foto" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">
+      {{nomeProduto}}
+      <span *ngIf="promocao" class="badge badge-sucess"> Promoção </span>
+    </h5>
+    <p class="card-text">Identificação: {{idProduto}}</p>
+    <a href="#" class="btn btn-primary">R$ {{precoProduto}}</a>
+  </div>
+</div>
 
 <div class="row">
 <div class="col">
