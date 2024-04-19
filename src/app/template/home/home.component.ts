@@ -8,10 +8,11 @@ import { Component } from '@angular/core';
 export class HomeComponent {
     nomeProduto : string = "Curso de Angular";
     anuncio: string = `O ${this.nomeProduto} está em promoção`;
-    idProduto: number = 123;
+    idProduto: number = 3.5123;
     precoProduto : number = 2.59;
     promocao: boolean = true;
     foto: string = 'assets/img/crud.png'
+    dtValidade = '2025-05-15'
 
   constructor() {
       // variáveis de string com concatenação
