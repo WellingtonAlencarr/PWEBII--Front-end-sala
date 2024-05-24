@@ -5,13 +5,11 @@
       <div class="col-md-12">
         <div class="form-group">
           <label for="nome">Nome do Produto:</label>
-          <input
-          type="text"
+          <input type="text"
           class="form-control"
           placeholder="Digite o nome do Produto"
           name="nomeProduto"
-          [(ngModel)]="nome"
-          />
+            [(ngModel)]="produto.nome" />
         </div>
 
       </div>
@@ -20,26 +18,22 @@
       <div class="col-md-6">
         <div class="form-group">
           <label for="validade">Vailidade do Produto:</label>
-          <input
-          type="date"
+          <input type="date"
           class="form-control"
           name="validade"
-          [(ngModel)]="validade"
-          >
+          [(ngModel)]="produto.validade">
         </div>
-        </div>
+      </div>
 
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="validade">Preço do Produto:</label>
-            <input
-            type="number"
-            class="form-control"
-            placeholder="0.00"
-            name="preco"
-            [(ngModel)]="preco"
-            >
-          </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="validade">Preço do Produto:</label>
+          <input type="number"
+          class="form-control"
+          placeholder="0.00"
+          name="preco"
+          [(ngModel)]="produto.precoProduto">
+        </div>
 
       </div>
     </div>
@@ -61,5 +55,4 @@
   <p>Nome: {{nome}}</p>
   <p>Validade: {{validade}}</p>
   <p>Preço: {{preco}}</p>
-
 </div>
